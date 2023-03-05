@@ -57,17 +57,13 @@ export default class Service {
     return this.#lastResult;
   }
 
-  // #lastEyeState = { leftClosed: false, rightClosed: false }
-  // #tempEyeState = { leftClosed: false, rightClosed: false }
   #lastTimeWithOneEyeOpen;
   #sholdPlayVideo({ leftClosed, rightClosed }) {
-    console.log({ leftClosed, rightClosed });
     // shold UnPauseVideo
     if (!leftClosed || !rightClosed) {
       this.#lastTimeWithOneEyeOpen = Date.now();
       return true;
     }
-    // if(!shouldPauseVideo()) return true;
 
     return Date.now() - this.#lastTimeWithOneEyeOpen <= 3000;
   }
