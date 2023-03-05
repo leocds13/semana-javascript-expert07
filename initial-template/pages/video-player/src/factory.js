@@ -50,7 +50,6 @@ const camera = await Camera.init();
 const worker = await getWorker();
 
 const [rootPath] = window.location.href.split("/pages/");
-
 const view = new View();
 view.setVideoSrc(`${rootPath}/assets/video.mp4`);
 

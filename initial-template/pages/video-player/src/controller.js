@@ -21,12 +21,12 @@ export default class Controller {
   #configureWorker(worker) {
     let ready = false;
     worker.onmessage = ({ data }) => {
-      if (data === "MODEL_READY") {
-        console.log("worker ready");
-        this.#view.enableButton();
-        ready = true;
-        return;
-      }
+      // if (data === "MODEL_READY") {
+      //   console.log("worker ready");
+      //   this.#view.enableButton();
+      //   ready = true;
+      //   return;
+      // }
 
       const watching = data;
       // this.#blinkCounter += leftEye || rightEye
