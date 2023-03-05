@@ -4,6 +4,9 @@ Seja bem vindo(a) à sétima Semana Javascript Expert. Este é o código inicial
 
 Marque esse projeto com uma estrela 🌟
 
+## Live-Demo
+- Para testar o projeto final [clique aqui](https://leocds13.github.io/semana-javascript-expert07/)
+
 ## Preview
 <img width=100% src="./initial-template/assets/demo-template-lg.gif">
 
