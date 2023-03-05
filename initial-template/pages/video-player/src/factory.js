@@ -50,6 +50,7 @@ const camera = await Camera.init();
 const worker = await getWorker();
 
 const [rootPath] = window.location.href.split("/pages/");
+console.log({ rootPath });
 const factory = {
   async initialize() {
     return Controller.initialize({
