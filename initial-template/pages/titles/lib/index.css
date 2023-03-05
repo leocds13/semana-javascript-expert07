@@ -1186,3 +1186,14 @@ a {
         padding: 0px 10px;
     }
 }
+
+#handsLayer {
+    /* faz com que elementos possam ser clicavel */
+    pointer-events: none;
+
+    /* faz ficar em cima dos elementos */
+    position: fixed;
+
+    /* fica à frente dos elementos */
+    z-index: 40;
+}
